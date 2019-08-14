@@ -31,6 +31,6 @@
 ---
 
 # 代码运行环境
-语言：Python3.6
-集成环境：Anaconda3
+语言：Python3.6<br>
+集成环境：Anaconda3<br>
 编程IDE：Pycharm
