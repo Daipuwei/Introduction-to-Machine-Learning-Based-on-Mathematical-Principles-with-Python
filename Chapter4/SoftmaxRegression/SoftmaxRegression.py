@@ -230,11 +230,11 @@ class SoftmaxRegression(object):
         Cost = np.array(Cost)
         return Cost
 
-    def train_MBGD(self, iter, mini_batch, alpha):
+    def train_MBGD(self, iter, batch_size, alpha):
         """
         这是利用MBGD算法迭代优化的函数
         :param iter: 迭代次数
-        :param mini_batch: 小样本规模
+        :param batch_size: 小样本规模
         :param alpha: 学习率
         """
         # 定义训练损失数组，记录每轮迭代的训练数据集的训练损失
@@ -244,7 +244,7 @@ class SoftmaxRegression(object):
         # 开始进行迭代训练
         for i in range(iter):
             # 利用学习率alpha，结合MBGD算法对模型进行训练
-            self.MBGD(alpha, mini_batch)
+            self.MBGD(alpha, batch_size)
             # 记录每次迭代的训练损失
             Cost.append(self.Cost())
         Cost = np.array(Cost)
