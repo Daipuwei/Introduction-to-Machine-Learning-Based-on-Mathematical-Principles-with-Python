@@ -123,10 +123,8 @@ def run_main():
             print(np.shape(Test_Label))'''
             # 利用MBGD算法训练BPNN，并返训练迭代误差
             _train_loss, _test_loss, _train_accuracy, _test_accuracy = \
-                BPNN_MBGD.train_SGD(Train_Data, Train_Label, Test_Data, Test_Label,
+                BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
                                  iteration, learning_rate, beta, lambd)
-            '''BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
-                                                 iteration, batch_size, learning_rate, beta, lambd)'''
             train_loss.append(_train_loss)
             test_loss.append(_test_loss)
             train_accuracy.append(_train_accuracy)
@@ -256,10 +254,8 @@ def run_main():
             Test_Label = Label[test_index]
             # 利用MBGD算法训练BPNN，并返训练迭代误差
             _train_loss, _test_loss, _train_accuracy, _test_accuracy = \
-                BPNN_MBGD.train_BGD(Train_Data, Train_Label, Test_Data, Test_Label,
+                BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
                                     iteration, learning_rate, beta, lambd)
-            '''BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
-                                                 iteration, batch_size, learning_rate, beta, lambd)'''
             train_loss.append(_train_loss)
             test_loss.append(_test_loss)
             train_accuracy.append(_train_accuracy)
@@ -387,10 +383,8 @@ def run_main():
             Test_Label = Label[test_index]
             # 利用MBGD算法训练BPNN，并返训练迭代误差
             _train_loss, _test_loss, _train_accuracy, _test_accuracy = \
-                BPNN_MBGD.train_BGD(Train_Data, Train_Label, Test_Data, Test_Label,
+                BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
                                     iteration, learning_rate, beta, lambd)
-            '''BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
-                                                 iteration, batch_size, learning_rate, beta, lambd)'''
             train_loss.append(_train_loss)
             test_loss.append(_test_loss)
             train_accuracy.append(_train_accuracy)
@@ -518,10 +512,8 @@ def run_main():
             Test_Label = Label[test_index]
             # 利用MBGD算法训练BPNN，并返训练迭代误差
             _train_loss, _test_loss, _train_accuracy, _test_accuracy = \
-                BPNN_MBGD.train_BGD(Train_Data, Train_Label, Test_Data, Test_Label,
+                BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
                                     iteration, learning_rate, beta, lambd)
-            '''BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
-                                                 iteration, batch_size, learning_rate, beta, lambd)'''
             train_loss.append(_train_loss)
             test_loss.append(_test_loss)
             train_accuracy.append(_train_accuracy)
