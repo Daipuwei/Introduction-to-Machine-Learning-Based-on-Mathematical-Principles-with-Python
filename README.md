@@ -36,3 +36,6 @@
 语言：Python3.6<br>
 集成环境：Anaconda3<br>
 编程IDE：Pycharm
+
+# 图书购买
+该书已由北京大学出版社出版，读者若有需要可跳转至北京大学出版社当当网自营店[http://product.dangdang.com/28511988.html]进行购买
