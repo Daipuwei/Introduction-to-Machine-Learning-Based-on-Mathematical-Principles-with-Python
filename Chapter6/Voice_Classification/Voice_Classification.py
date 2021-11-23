@@ -124,7 +124,7 @@ def run_main():
             # 利用MBGD算法训练BPNN，并返训练迭代误差
             _train_loss, _test_loss, _train_accuracy, _test_accuracy = \
                 BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
-                                 iteration, learning_rate, beta, lambd)
+                                     iteration, batch_size,learning_rate, beta, lambd)
             train_loss.append(_train_loss)
             test_loss.append(_test_loss)
             train_accuracy.append(_train_accuracy)
@@ -255,7 +255,7 @@ def run_main():
             # 利用MBGD算法训练BPNN，并返训练迭代误差
             _train_loss, _test_loss, _train_accuracy, _test_accuracy = \
                 BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
-                                    iteration, learning_rate, beta, lambd)
+                                    iteration, batch_size,learning_rate, beta, lambd)
             train_loss.append(_train_loss)
             test_loss.append(_test_loss)
             train_accuracy.append(_train_accuracy)
@@ -384,7 +384,7 @@ def run_main():
             # 利用MBGD算法训练BPNN，并返训练迭代误差
             _train_loss, _test_loss, _train_accuracy, _test_accuracy = \
                 BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
-                                    iteration, learning_rate, beta, lambd)
+                                    iteration, batch_size,learning_rate, beta, lambd)
             train_loss.append(_train_loss)
             test_loss.append(_test_loss)
             train_accuracy.append(_train_accuracy)
@@ -513,7 +513,7 @@ def run_main():
             # 利用MBGD算法训练BPNN，并返训练迭代误差
             _train_loss, _test_loss, _train_accuracy, _test_accuracy = \
                 BPNN_MBGD.train_MBGD(Train_Data, Train_Label, Test_Data, Test_Label,
-                                    iteration, learning_rate, beta, lambd)
+                                    iteration, batch_size,learning_rate, beta, lambd)
             train_loss.append(_train_loss)
             test_loss.append(_test_loss)
             train_accuracy.append(_train_accuracy)
